@@ -295,7 +295,7 @@ number:
     entity_category: config
   - platform: template
     name: "Max Distance"
-    id: distance
+    id: max_distance
     max_value: 600
     min_value: 0
     unit_of_measurement: "cm"
