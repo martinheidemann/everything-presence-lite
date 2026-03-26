@@ -1,3 +1,7 @@
+substitutions:
+  ld2450_tx_pin: GPIO17   # default EPL hardware
+  ld2450_rx_pin: GPIO16   # default EPL hardware
+
 esphome:
   on_boot: 
     priority: -100
@@ -1141,13 +1145,13 @@ text:
 
 uart:
   id: uart_bus
-  tx_pin: 
-    number: GPIO17
+  tx_pin:
+    number: ${ld2450_tx_pin}
     mode:
       input: true
       pullup: true
-  rx_pin: 
-    number: GPIO16
+  rx_pin:
+    number: ${ld2450_rx_pin}
     mode:
       input: true
       pullup: true
