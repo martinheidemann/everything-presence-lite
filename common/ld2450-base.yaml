@@ -1190,7 +1190,7 @@ uart:
           const static float DEGREES_TO_RADIANS = 3.14159265358979323846 / 180.0;
           const static int16_t MIN_INT16_VAL = -32768;
 
-          float max_distance = float(id(distance).state) * 10;
+          float max_distance = float(id(max_distance).state) * 10;
           float installation_angle = id(installation_angle_ui).state * DEGREES_TO_RADIANS;
 
           static unsigned long assumed_present_until = 0;
